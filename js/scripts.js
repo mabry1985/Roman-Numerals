@@ -1,11 +1,7 @@
 function toThree(input) {
   if ((input < 4) && (input > 0)) {
-    //var outputArray = []
     var difference = (input - 1);
-    outputArray = new Array(difference + 1);
-    outputArray.fill('I');
-    outputArray.concat(outputArray);
-    outputArray = outputArray.join('');
+    outputArray = new Array(difference + 1).fill('I').concat(outputArray).join('');
     return outputArray;
   } else if (input === 4) {
     var outputArray = [];
