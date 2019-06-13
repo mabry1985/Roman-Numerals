@@ -1,19 +1,17 @@
 function toThree(input) {
   if ((input < 4) && (input > 0)) {
-    var outputArray = [];
+    //var outputArray = []
     var difference = (input - 1);
-    differenceArray = new Array(difference + 1);
-    differenceArray.fill('I');
-    differenceArray.concat(outputArray);
-    var output = differenceArray.join('');
-    outputArray = output;
+    outputArray = new Array(difference + 1);
+    outputArray.fill('I');
+    outputArray.concat(outputArray);
+    outputArray = outputArray.join('');
     return outputArray;
-  }  else if (input === 4) {
+  } else if (input === 4) {
     var outputArray = [];
     outputArray.push('IV');
     outputArray = outputArray.join('');
     return outputArray;
-
   } else if (input === 5) {
     var outputArray = [];
     outputArray.push('V');
